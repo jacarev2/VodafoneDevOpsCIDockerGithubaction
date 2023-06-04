@@ -1,4 +1,4 @@
-name: CI Workflow for Docker Build
+name: CI Workflow for Docker Build P3_1
 
 on:
   push:
