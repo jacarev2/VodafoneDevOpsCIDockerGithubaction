@@ -1,4 +1,4 @@
-name: GitHub CLI Workflow
+name: GitHub Secrect Workflow
 on:
   push:
 jobs:
@@ -6,7 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Execute GitHub CLI Command
-        run: gh repo list anujdevopslearn
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetching GitHub Secrect
+        run: echo "${{ secrets.GITHUB_TOKEN }}"
