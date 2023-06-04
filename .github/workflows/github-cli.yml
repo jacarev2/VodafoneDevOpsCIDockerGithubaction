@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Fetching GitHub Secrect
-        run: echo "${{ secrets.GITHUB_TOKEN }}"
+        run: echo "${{ secrets.PASSWORD_TOKEN }}"
